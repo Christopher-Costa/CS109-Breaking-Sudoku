@@ -61,7 +61,7 @@ class Sudoku():
 
     def create_conditional_probability_table(self):
         if self.training_data:
-            self.p_table = pd.read_csv(self.training_data).to_numpy()
+            self.p_table = pd.read_csv(self.training_data,header=None).to_numpy()
 
     ###################
     # Helper Functions
